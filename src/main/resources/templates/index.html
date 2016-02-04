@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Hello Spring Boot!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<p>Hello Spring Boot!</p>
+
+	<form action="#" th:action="@{/}" th:object="${model}" method="post">
+		<input type="text" th:field="*{firstname}" /> 
+		<input type="text" th:field="*{surname}" />
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
