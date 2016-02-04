@@ -8,6 +8,7 @@ public class WelcomeModel implements Serializable {
 
 	private String forename;
 	private String surname;
+	private String message;
 	
 	public String getForename() {
 		return forename;
@@ -23,6 +24,14 @@ public class WelcomeModel implements Serializable {
 	
 	public void setSurname(String surname) {
 		this.surname = surname;
+	}
+	
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	public String getMessage() {
+		return message;
 	}
 	
 }

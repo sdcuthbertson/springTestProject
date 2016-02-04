@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-	<p>Hello Spring Boot!</p>
+	<p th:text="${model.message}" />
 
 	<form action="#" th:action="@{/}" th:object="${model}" method="post">
 		<input type="text" th:field="*{firstname}" /> 
